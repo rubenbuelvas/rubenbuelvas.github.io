@@ -648,7 +648,7 @@ li {
 /*                      SECTION FUN FACTS                          */
 /*-----------------------------------------------------------------*/
 .facts {
-    background: url(http://placehold.it/740x270) center left no-repeat;
+    background: url('../images/welcome.jpg') center left no-repeat;
     background-size: cover;
 }
 
