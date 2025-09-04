@@ -15,7 +15,7 @@ Description: CV, Resume, vCard HTML Template
 06. Section Welcome
 07. Section Fun Facts
 08. Section Resume
-09. Section Works
+09. Section Projects
 10. Section Testimonials
 11. Section Blog
 12. Section Customers
@@ -538,28 +538,7 @@ li {
     position: relative;
     width: 500px;
     z-index: 1;
-}
-
-.welcome .quote:before {
-    content: '';
-    position: absolute;
-    left: -32px;
-    top: -40px;
-    height: 22px;
-    width: 22px;
-    border-top: solid 4px #FFF;
-    border-left: solid 4px #FFF;
-}
-
-.welcome .quote:after {
-    content: '';
-    position: absolute;
-    right: -30px;
-    bottom: -18px;
-    height: 22px;
-    width: 22px;
-    border-bottom: solid 4px #FFF;
-    border-right: solid 4px #FFF;
+    padding: 3rem;   
 }
 
 .welcome .quote h2 {
@@ -731,42 +710,42 @@ li {
 /*-----------------------------------------------------------------*/
 /*                      SECTION WORKS                              */
 /*-----------------------------------------------------------------*/
-.works .control {
+.projects .control {
     margin-bottom: 30px;
 }
 
-.works .control ul {
+.projects .control ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.works .control ul li {
+.projects .control ul li {
     display: inline-block;
     padding: 0 20px 0 0;
 }
 
-.works .control ul li a {
+.projects .control ul li a {
     color: #9E9E9E;
     cursor: pointer;
     font-family: "Montserrat",sans-serif;
     font-size: 14px;
 }
 
-.works .control ul li a:hover {
+.projects .control ul li a:hover {
     color: #1a1a1a;
     text-decoration: none;
 }
 
-.works .control ul li.active a {
+.projects .control ul li.active a {
     color: #1a1a1a;
 }
 
-.works .control ul li:last-child {
+.projects .control ul li:last-child {
     padding-right: 0;
 }
 
-.works .item-outer {
+.projects .item-outer {
     list-style: none;
     margin: 0 -1px;
     overflow: hidden;
@@ -777,19 +756,19 @@ li {
     transition: all .3s ease-in-out;
 }
 
-.works .item-outer .filtr-item {
+.projects .item-outer .filtr-item {
     display: inline-block;
     padding: 0 1px;
 }
 
-.works .item-outer .item {
+.projects .item-outer .item {
     margin-bottom: 2px;
     overflow: hidden;
     height: 193px;
     position: relative;
 }
 
-.works .item-outer .item .title {
+.projects .item-outer .item .title {
     color: #FFF;
     position: absolute;
     top: 0;
@@ -798,7 +777,7 @@ li {
     z-index: 2;
 }
 
-.works .item-outer .item .title:before {
+.projects .item-outer .item .title:before {
     content: '';
     border-top: solid #FFF 3px;
     border-left: solid #FFF 3px;
@@ -816,7 +795,7 @@ li {
     transition: all .3s ease-in-out;
 }
 
-.works .item-outer .item .title:after {
+.projects .item-outer .item .title:after {
     content: '';
     border-bottom: solid #FFF 3px;
     border-right: solid #FFF 3px;
@@ -834,14 +813,14 @@ li {
     transition: all .3s ease-in-out;
 }
 
-.works .item-outer .item .title .inner {
+.projects .item-outer .item .title .inner {
     text-align: center;
     top: calc(50% - 30px);
     width: 100%;
     position: absolute;
 }
 
-.works .item-outer .item .title h2 {
+.projects .item-outer .item .title h2 {
     font-size: 18px;
     font-weight: 400;
     letter-spacing: .04em;
@@ -856,7 +835,7 @@ li {
     transition: all .3s ease-in-out;
 }
 
-.works .item-outer .item .title span {
+.projects .item-outer .item .title span {
     color: #DDD;
     display: block;
     font-size: 12px;
@@ -870,7 +849,7 @@ li {
     transition: all .3s ease-in-out;
 }
 
-.works .item-outer .item img {
+.projects .item-outer .item img {
     max-width: 100%;
     height: auto;
     -ms-transform: scale(1);
@@ -882,7 +861,7 @@ li {
     transition: all .3s ease-in-out;
 }
 
-.works .item-outer .item .overlay {
+.projects .item-outer .item .overlay {
     background: rgba(12,12,12,0.85);
     height: 100%;
     left: 0;
@@ -897,41 +876,41 @@ li {
     transition: all .3s ease-in-out;
 }
 
-.works .item-outer .item:hover h2 {
+.projects .item-outer .item:hover h2 {
     -ms-transform: translateY(0px);
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
 }
 
-.works .item-outer .item:hover span {
+.projects .item-outer .item:hover span {
     -ms-transform: translateY(0px);
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
 }
 
-.works .item-outer .item:hover .overlay {
+.projects .item-outer .item:hover .overlay {
     opacity: 1;
 }
 
-.works .item-outer .item:hover img {
+.projects .item-outer .item:hover img {
     -ms-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 
-.works .item-outer .item:hover .title:before {
+.projects .item-outer .item:hover .title:before {
     -ms-transform: translate(0px);
     -webkit-transform: translate(0px);
     transform: translate(0px);
 }
 
-.works .item-outer .item:hover .title:after {
+.projects .item-outer .item:hover .title:after {
     -ms-transform: translate(-45px,-45px);
     -webkit-transform: translate(-45px,-45px);
     transform: translate(-45px,-45px);
 }
 
-.works .item-outer .mix {
+.projects .item-outer .mix {
     padding: 5px;
 }
 
@@ -1187,7 +1166,7 @@ li {
 /*                      RESPONSIVE                                  */
 /*-----------------------------------------------------------------*/
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-    .works .item-outer .mix {
+    .projects .item-outer .mix {
         width: 50%;
     }
 }
@@ -1226,7 +1205,7 @@ li {
         -webkit-transform: translateX(260px);
         transform: translateX(260px);
     }
-    .works .item-outer .item {
+    .projects .item-outer .item {
         height: 280px;
     }
 }
