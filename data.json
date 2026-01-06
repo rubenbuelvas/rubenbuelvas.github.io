@@ -1,6 +1,5 @@
 {
     "en": {
-        "name": "Your Name",
         "subtitle": "Full Stack Developer",
         "experience_title": "Experience",
         "jobs": [
@@ -13,8 +12,20 @@
         "skills_title": "Skills",
         "skills": ["HTML / SASS", "JavaScript", "Python"]
     },
+    "fr": {
+        "subtitle": "Développeur Full Stack FR",
+        "experience_title": "Experiencia",
+        "jobs": [
+            {
+                "title": "Desarrollador Senior @ Tech Corp",
+                "date": "2022 - 2026",
+                "desc": ["Lideré un equipo de 5 desarrolladores.", "Construí soluciones en la nube."]
+            }
+        ],
+        "skills_title": "Habilidades",
+        "skills": ["HTML / SASS", "JavaScript", "Python"]
+    },
     "es": {
-        "name": "Tu Nombre",
         "subtitle": "Desarrollador Full Stack",
         "experience_title": "Experiencia",
         "jobs": [
