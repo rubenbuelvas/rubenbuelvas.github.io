@@ -5,8 +5,11 @@
         "jobs": [
             {
                 "title": "Senior Developer @ Tech Corp",
-                "date": "2022 - 2026",
-                "desc": ["Led a team of 5 developers.", "Built scalable cloud solutions."]
+                "subtitle": "2022 - 2026",
+                "description": "Worked on various cloud projects.",
+                "desc": ["Led a team of 5 developers.", "Built scalable cloud solutions."],
+                "tech_stack_title": "Tech Stack",
+                "tech_stack": ["AWS", "Docker", "Kubernetes"]
             }
         ],
         "skills_title": "Skills",
@@ -18,7 +21,7 @@
         "jobs": [
             {
                 "title": "Développeur Senior @ Tech Corp",
-                "date": "2022 - 2026",
+                "subtitle": "2022 - 2026",
                 "desc": ["Lideré un equipo de 5 desarrolladores.", "Construí soluciones en la nube."]
             }
         ],
@@ -31,7 +34,7 @@
         "jobs": [
             {
                 "title": "Desarrollador Senior @ Tech Corp",
-                "date": "2022 - 2026",
+                "subtitle": "2022 - 2026",
                 "desc": ["Lideré un equipo de 5 desarrolladores.", "Construí soluciones en la nube."]
             }
         ],

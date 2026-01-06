@@ -22,8 +22,10 @@ function render() {
     expList.innerHTML = lang.jobs.map(job => `
         <div class="job">
             <h3>${job.title}</h3>
-            <p class="date">${job.date}</p>
+            <p>${job.subtitle}</p>
+            <p>${job.description}</p>
             <ul>${job.desc.map(d => `<li>${d}</li>`).join('')}</ul>
+            <p><strong>${job.tech_stack_title}:</strong> ${job.tech_stack.join(', ')}.</p>
         </div>
     `).join('');
 
