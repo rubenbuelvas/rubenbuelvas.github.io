@@ -1,0 +1,131 @@
+@use "sass:map";
+
+$themes: (
+    dark: (
+        bg: #121212,
+        card: #1e1e1e,
+        text: #e0e0e0,
+        accent: #3498db,
+        border: #333333,
+        sidebar-bg: #252525
+    ),
+    light: (
+        bg: #f0f2f5,
+        card: #ffffff,
+        text: #2c3e50,
+        accent: #2980b9,
+        border: #dddddd,
+        sidebar-bg: #f9f9f9
+    )
+);
+
+:root {
+    @each $name, $value in map.get($themes, dark) {
+        --#{$name}: #{$value};
+    }
+}
+
+[data-theme="light"] {
+    @each $name, $value in map.get($themes, light) {
+        --#{$name}: #{$value};
+    }
+}
+
+// Global Styles
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Montserrat', system-ui, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    transition: background 0.3s ease;
+}
+
+.controls {
+    max-width: 850px;
+    margin: 0 auto 20px;
+    display: flex;
+    gap: 15px;
+
+    button {
+        cursor: pointer;
+        padding: 8px 16px;
+        border-radius: 6px;
+        border: 1px solid var(--border);
+        background: var(--card);
+        color: var(--text);
+        font-weight: 600;
+        transition: 0.2s;
+
+        &:hover {
+            border-color: var(--accent);
+        }
+    }
+}
+
+// Resume Layout
+.resume-container {
+    max-width: 850px;
+    margin: 0 auto;
+    background: var(--card);
+    border: 1px solid var(--border);
+    display: grid;
+    grid-template-columns: 2fr 1fr; // Main content and Sidebar
+    gap: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+    header {
+        grid-column: 1 / span 2;
+        padding: 40px;
+        border-bottom: 2px solid var(--accent);
+
+        .profile-section {
+            display: flex; // Allows image and text to sit side-by-side
+            align-items: center; // Vertically center them
+            margin-bottom: 20px;
+
+            .profile-pic {
+				width: 90px; // Adjust size as needed
+				height: 90px;
+				border-radius: 50%; // Makes it circular
+				object-fit: cover; // Ensures the image covers the area without distortion
+				margin-right: 25px; // Space between image and text
+				border: 3px solid var(--accent); // Optional border
+				box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            }
+        }
+        
+        h1 { margin: 0; color: var(--accent); text-transform: uppercase; }
+        .subtitle { font-size: 1.2rem; margin: 5px 0; opacity: 0.9; }
+        .contact-info { font-size: 0.85rem; opacity: 0.7; }
+    }
+
+    main {
+        padding: 30px 40px;
+        h2 { color: var(--accent); border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+        .job { margin-bottom: 25px; }
+    }
+
+    aside {
+        background: var(--sidebar-bg);
+        padding: 30px;
+        border-left: 1px solid var(--border);
+
+        h2 { font-size: 1.1rem; color: var(--accent); }
+        ul { 
+            padding-left: 18px; 
+            li { margin-bottom: 8px; font-size: 0.95rem; }
+        }
+    }
+}
+
+// Mobile View
+@media (max-width: 650px) {
+    .resume-container {
+        grid-template-columns: 1fr;
+        header { grid-column: 1; }
+        aside { border-left: none; border-top: 1px solid var(--border); }
+    }
+}
