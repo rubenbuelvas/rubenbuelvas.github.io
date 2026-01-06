@@ -52,7 +52,13 @@ document.getElementById('lang-toggle-es').onclick = () => {
 const themeBtn = document.getElementById('theme-toggle');
 themeBtn.onclick = () => {
     const current = document.documentElement.getAttribute('data-theme');
-    document.documentElement.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
+    if (current === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'light');
+        themeBtn.innerText = '🌙';
+    } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        themeBtn.innerText = '☀️';
+    }
 };
 
 loadResume();
