@@ -1,6 +1,6 @@
 {
     "en": {
-        "subtitle": "Full Stack Developer",
+        "subtitle": "Software Engineer",
         "experience_title": "Experience",
         "jobs": [
             {
@@ -13,11 +13,11 @@
         "skills": ["HTML / SASS", "JavaScript", "Python"]
     },
     "fr": {
-        "subtitle": "Développeur Full Stack FR",
-        "experience_title": "Experiencia",
+        "subtitle": "Développeur de logiciel",
+        "experience_title": "Expérience",
         "jobs": [
             {
-                "title": "Desarrollador Senior @ Tech Corp",
+                "title": "Développeur Senior @ Tech Corp",
                 "date": "2022 - 2026",
                 "desc": ["Lideré un equipo de 5 desarrolladores.", "Construí soluciones en la nube."]
             }
@@ -26,7 +26,7 @@
         "skills": ["HTML / SASS", "JavaScript", "Python"]
     },
     "es": {
-        "subtitle": "Desarrollador Full Stack",
+        "subtitle": "Ingeniero de Software",
         "experience_title": "Experiencia",
         "jobs": [
             {
