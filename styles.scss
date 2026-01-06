@@ -1,0 +1,89 @@
+// Variables
+$primary-color: #2c3e50;
+$accent-color: #3498db;
+$text-color: #333;
+$bg-color: #f4f7f6;
+$white: #ffffff;
+$font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+// Base Styles
+body {
+    font-family: $font-stack;
+    background-color: $bg-color;
+    color: $text-color;
+    line-height: 1.6;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+.resume-container {
+    max-width: 850px;
+    margin: 0 auto;
+    background: $white;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+
+    // Header spans both columns
+    header {
+        grid-column: 1 / span 2;
+        border-bottom: 3px solid $primary-color;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+
+        h1 {
+            margin: 0;
+            color: $primary-color;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: $accent-color;
+            font-weight: bold;
+        }
+
+        .contact-info {
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+    }
+
+    // Main Content
+    main {
+        h2 {
+            border-left: 5px solid $accent-color;
+            padding-left: 10px;
+            color: $primary-color;
+        }
+
+        .job {
+            margin-bottom: 20px;
+            .date { font-style: italic; color: #777; }
+        }
+    }
+
+    // Sidebar
+    aside {
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+
+        h2 { font-size: 1.2rem; color: $primary-color; }
+        ul {
+            padding-left: 20px;
+            li { margin-bottom: 10px; }
+        }
+    }
+}
+
+// Responsive Design
+@media (max-width: 600px) {
+    .resume-container {
+        grid-template-columns: 1fr;
+        header { grid-column: 1; }
+    }
+}
