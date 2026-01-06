@@ -1,4 +1,5 @@
-// Theme Color Maps
+@use "sass:map";
+
 $themes: (
   dark: (
     bg: #121212,
@@ -18,15 +19,14 @@ $themes: (
   )
 );
 
-// CSS Variable Generation
 :root {
-  @each $name, $value in map-get($themes, dark) {
+  @each $name, $value in map.get($themes, dark) {
     --#{$name}: #{$value};
   }
 }
 
 [data-theme="light"] {
-  @each $name, $value in map-get($themes, light) {
+  @each $name, $value in map.get($themes, light) {
     --#{$name}: #{$value};
   }
 }
