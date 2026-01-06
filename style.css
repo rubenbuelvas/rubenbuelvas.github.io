@@ -1,9 +1,9 @@
 a:link {
-  color: #3498db;
+  color: var(--accent);
 }
 
 a:visited {
-  color: #3498db;
+  color: var(--accent);
 }
 
 :root {
@@ -34,7 +34,7 @@ body {
 }
 
 .controls {
-  max-width: 850px;
+  max-width: 1000px;
   margin: 0 auto 20px;
   display: flex;
   gap: 15px;
@@ -54,7 +54,7 @@ body {
 }
 
 .resume-container {
-  max-width: 850px;
+  max-width: 1000px;
   margin: 0 auto;
   background: var(--card);
   border: 1px solid var(--border);
@@ -76,8 +76,8 @@ body {
   margin-bottom: 20px;
 }
 .resume-container header .profile-section .profile-pic {
-  width: 90px;
-  height: 90px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -109,6 +109,9 @@ body {
 }
 .resume-container main .job {
   margin-bottom: 25px;
+}
+.resume-container main .job p {
+  white-space: pre-line;
 }
 .resume-container aside {
   background: var(--sidebar-bg);

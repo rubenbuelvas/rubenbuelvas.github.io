@@ -20,11 +20,11 @@ $themes: (
 );
 
 a:link {
-  color: #3498db;
+  color: var(--accent);
 }
 
 a:visited {
-  color: #3498db;
+  color: var(--accent);
 }
 
 :root {
@@ -39,7 +39,6 @@ a:visited {
     }
 }
 
-// Global Styles
 body {
     background-color: var(--bg);
     color: var(--text);
@@ -50,7 +49,7 @@ body {
 }
 
 .controls {
-    max-width: 850px;
+    max-width: 1000px;
     margin: 0 auto 20px;
     display: flex;
     gap: 15px;
@@ -73,7 +72,7 @@ body {
 
 // Resume Layout
 .resume-container {
-    max-width: 850px;
+    max-width: 1000px;
     margin: 0 auto;
     background: var(--card);
     border: 1px solid var(--border);
@@ -90,17 +89,17 @@ body {
         border-bottom: 2px solid var(--accent);
 
         .profile-section {
-            display: flex; // Allows image and text to sit side-by-side
-            align-items: center; // Vertically center them
+            display: flex;
+            align-items: center;
             margin-bottom: 20px;
 
             .profile-pic {
-				width: 90px; // Adjust size as needed
-				height: 90px;
-				border-radius: 50%; // Makes it circular
-				object-fit: cover; // Ensures the image covers the area without distortion
-				margin-right: 25px; // Space between image and text
-				border: 3px solid var(--accent); // Optional border
+				width: 150px;
+				height: 150px;
+				border-radius: 50%;
+				object-fit: cover;
+				margin-right: 25px;
+				border: 3px solid var(--accent);
 				box-shadow: 0 0 10px rgba(0,0,0,0.2);
             }
         }
@@ -114,6 +113,7 @@ body {
         padding: 30px 40px;
         h2 { color: var(--accent); border-bottom: 1px solid var(--border); padding-bottom: 10px; }
         .job { margin-bottom: 25px; }
+        .job p { white-space: pre-line; }
     }
 
     aside {
