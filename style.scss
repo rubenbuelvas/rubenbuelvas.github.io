@@ -67,6 +67,12 @@ body {
         &:hover {
             border-color: var(--accent);
         }
+
+        &.active {
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
     }
 }
 

@@ -37,19 +37,29 @@ function render() {
     `).join('');
 }
 
+// Set active language button
+function setActiveLang(activeId) {
+    const buttons = ['lang-toggle-en', 'lang-toggle-fr', 'lang-toggle-es'];
+    buttons.forEach(id => document.getElementById(id).classList.remove('active'));
+    document.getElementById(activeId).classList.add('active');
+}
+
 // Language Toggles
 document.getElementById('lang-toggle-en').onclick = () => {
     currentLang = EN;
+    setActiveLang('lang-toggle-en');
     render();
 };
 
 document.getElementById('lang-toggle-fr').onclick = () => {
     currentLang = FR;
+    setActiveLang('lang-toggle-fr');
     render();
 };
 
 document.getElementById('lang-toggle-es').onclick = () => {
     currentLang = ES;
+    setActiveLang('lang-toggle-es');
     render();
 };
 
@@ -67,3 +77,4 @@ themeBtn.onclick = () => {
 };
 
 loadResume();
+setActiveLang('lang-toggle-en');

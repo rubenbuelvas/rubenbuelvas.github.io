@@ -52,6 +52,11 @@ body {
 .controls button:hover {
   border-color: var(--accent);
 }
+.controls button.active {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
 
 .resume-container {
   max-width: 1000px;
