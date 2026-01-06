@@ -1,55 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Resume - Dark Mode</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="controls">
+        <button id="theme-toggle">🌓 <span data-en="Theme" data-es="Tema">Theme</span></button>
+        <button id="lang-toggle">🌐 EN / ES</button>
+    </div>
+
     <div class="resume-container">
         <header>
             <h1>Your Name</h1>
-            <p class="subtitle">Full Stack Developer</p>
+            <p class="subtitle" data-en="Full Stack Developer" data-es="Desarrollador Full Stack">Full Stack Developer</p>
             <div class="contact-info">
-                <span>Email: hello@example.com</span> | 
-                <span>Phone: +1 234 567 890</span> | 
-                <span>Location: New York, NY</span>
+                <span>Email: hello@example.com</span> | <span>New York, NY</span>
             </div>
         </header>
 
         <main>
-            <section class="experience">
-                <h2>Experience</h2>
+            <section>
+                <h2 data-en="Experience" data-es="Experiencia">Experience</h2>
                 <div class="job">
-                    <h3>Senior Developer @ Tech Corp</h3>
-                    <p class="date">2022 - Present</p>
+                    <h3 data-en="Senior Developer @ Tech Corp" data-es="Desarrollador Senior @ Tech Corp">Senior Developer @ Tech Corp</h3>
+                    <p class="date">2022 - 2026</p>
                     <ul>
-                        <li>Led a team of 5 to build a scalable SaaS platform.</li>
-                        <li>Optimized database queries, reducing latency by 30%.</li>
+                        <li data-en="Led a team of 5 developers." data-es="Lideré un equipo de 5 desarrolladores.">Led a team of 5 developers.</li>
+                        <li data-en="Built scalable cloud solutions." data-es="Construí soluciones en la nube escalables.">Built scalable cloud solutions.</li>
                     </ul>
-                </div>
-            </section>
-
-            <section class="education">
-                <h2>Education</h2>
-                <div class="school">
-                    <h3>B.S. Computer Science</h3>
-                    <p>University of Design, 2018 - 2022</p>
                 </div>
             </section>
         </main>
 
         <aside>
             <section class="skills">
-                <h2>Skills</h2>
+                <h2 data-en="Skills" data-es="Habilidades">Skills</h2>
                 <ul>
-                    <li>HTML / CSS / SASS</li>
-                    <li>JavaScript (React, Node)</li>
-                    <li>Python & SQL</li>
+                    <li>HTML / SASS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
                 </ul>
             </section>
         </aside>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

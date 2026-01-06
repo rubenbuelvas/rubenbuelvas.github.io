@@ -1,0 +1,118 @@
+:root {
+  --bg: #121212;
+  --card: #1e1e1e;
+  --text: #e0e0e0;
+  --accent: #3498db;
+  --border: #333333;
+  --sidebar-bg: #252525;
+}
+
+[data-theme=light] {
+  --bg: #f0f2f5;
+  --card: #ffffff;
+  --text: #2c3e50;
+  --accent: #2980b9;
+  --border: #dddddd;
+  --sidebar-bg: #f9f9f9;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "Inter", system-ui, sans-serif;
+  margin: 0;
+  padding: 40px 20px;
+  transition: background 0.3s ease;
+}
+
+.controls {
+  max-width: 850px;
+  margin: 0 auto 20px;
+  display: flex;
+  gap: 15px;
+}
+.controls button {
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  font-weight: 600;
+  transition: 0.2s;
+}
+.controls button:hover {
+  border-color: var(--accent);
+}
+
+.resume-container {
+  max-width: 850px;
+  margin: 0 auto;
+  background: var(--card);
+  border: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+.resume-container header {
+  grid-column: 1/span 2;
+  padding: 40px;
+  border-bottom: 2px solid var(--accent);
+}
+.resume-container header h1 {
+  margin: 0;
+  color: var(--accent);
+  text-transform: uppercase;
+}
+.resume-container header .subtitle {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  opacity: 0.9;
+}
+.resume-container header .contact-info {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+.resume-container main {
+  padding: 30px 40px;
+}
+.resume-container main h2 {
+  color: var(--accent);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 10px;
+}
+.resume-container main .job {
+  margin-bottom: 25px;
+}
+.resume-container aside {
+  background: var(--sidebar-bg);
+  padding: 30px;
+  border-left: 1px solid var(--border);
+}
+.resume-container aside h2 {
+  font-size: 1.1rem;
+  color: var(--accent);
+}
+.resume-container aside ul {
+  padding-left: 18px;
+}
+.resume-container aside ul li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 650px) {
+  .resume-container {
+    grid-template-columns: 1fr;
+  }
+  .resume-container header {
+    grid-column: 1;
+  }
+  .resume-container aside {
+    border-left: none;
+    border-top: 1px solid var(--border);
+  }
+}/*# sourceMappingURL=style.css.map */
