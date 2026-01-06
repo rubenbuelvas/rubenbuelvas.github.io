@@ -1,15 +1,134 @@
 {
     "en": {
         "subtitle": "Software Engineer",
-        "experience_title": "Experience",
+        "experience_title": "Professional Experience",
         "jobs": [
             {
-                "title": "Senior Developer @ Tech Corp",
-                "subtitle": "2022 - 2026",
-                "description": "Worked on various cloud projects.",
-                "desc": ["Led a team of 5 developers.", "Built scalable cloud solutions."],
+                "title": "Mercado Libre",
+                "subtitle": "Ssr Software Engineer. January 2023 - Present \n Software Development Analyst. October 2021 - January 2023 \n Bogotá DC, Colombia",
+                "description": "Search Engine Team: Responsible for the design, development, and maintenance of API features and data pipelines.",
+                "bullet_points": [
+                    "Integrated microservices features using Hexagonal Architecture.",
+                    "Designed and developed software solutions in complex technical environments, balancing real-time data availability with application response times.",
+                    "Engineered data pipelines from data ingestion through to the implementation of application-level caches.",
+                    "Monitored deployments for high-traffic, high-criticality applications (handling approx. 15 million requests per minute).",
+                    "Performed unit and integration testing, coordinating across teams to ensure code quality.",
+                    "Participated in the full SDLC (POC, design, development, testing, review, deployment, and monitoring).",
+                    "Authored technical documentation for features and endpoint response changes for internal developers and cross-functional teams.",
+                    "Served as part of the On-Call rotation.",
+                    "Conducted GitHub code reviews to ensure quality, readability, maintainability, and test coverage.",
+                    "Supported the integration and deployment of Machine Learning models.",
+                    "Key Achievement: Reduced bug resolution time by approximately 50% by developing observability projects for the primary API.",
+                    "Key Achievement: Improved data pipeline performance by 20% through the re-architecture of multiple applications while enhancing code maintainability.",
+                    "Key Achievement: Designed the data model to integrate international shipping times into the search engine."
+                ],
                 "tech_stack_title": "Tech Stack",
-                "tech_stack": ["AWS", "Docker", "Kubernetes"]
+                "tech_stack": [
+                    "Golang", 
+                    "Gin Gonic",
+                    "Python", 
+                    "Poetry", 
+                    "Jupyter", 
+                    "SciKitLearn", 
+                    "Pandas", 
+                    "Fast API", 
+                    "Java", 
+                    "Spring Boot", 
+                    "Maven", 
+                    "HTML", 
+                    "CSS", 
+                    "JavaScript", 
+                    "TypeScript", 
+                    "React", 
+                    "REST", 
+                    "Git", 
+                    "GCP", 
+                    "GCS", 
+                    "BigQuery", 
+                    "Redis", 
+                    "BigQueue", 
+                    "AWS", 
+                    "S3", 
+                    "CI/CD", 
+                    "Jenkins", 
+                    "Docker", 
+                    "Jira", 
+                    "Confluence", 
+                    "GitHub", 
+                    "SCRUM", 
+                    "Datadog",
+                    "New Relic" ,  
+                    "Postman", 
+                    "GNU/Linux"
+                ]
+            },
+            {
+                "title": "Akuro SAS",
+                "subtitle": "Software Developer. July 2021 - September 2021 \n Software Developer. July 2020 - January 2021 \n Bogotá DC, Colombia",
+                "description": "Development Team: Responsible for API design and maintenance. Designed database models based on client requirements.",
+                "bullet_points": [
+                    "Participated in all phases of the software development life cycle for client-facing applications.",
+                    "Developed data backup tools and automated processes via web scraping scripts.",
+                    "Designed data models in collaboration with clients.",
+                    "Integrated payment gateways into the core platform.",
+                    "Executed unit and integration testing to ensure robust deployments."
+                ],
+                "tech_stack_title": "Tech Stack",
+                "tech_stack": [
+                    "Python", 
+                    "Flask", 
+                    "Jinja", 
+                    "Jupyter", 
+                    "Pandas", 
+                    "Scrapy", 
+                    "HTML", 
+                    "CSS", 
+                    "SASS", 
+                    "JavaScript", 
+                    "JQuery", 
+                    "REST", 
+                    "PostgreSQL", 
+                    "SQLite", 
+                    "MySQL", 
+                    "Git", 
+                    "Heroku", 
+                    "AWS", 
+                    "S3", 
+                    "Docker", 
+                    "GitLab", 
+                    "SCRUM", 
+                    "Postman", 
+                    "GNU/Linux"
+                ]
+            }
+        ],
+        "aside_elements": [
+            {
+                "title": "Skills",
+                "items": [
+                    "Programming Languages: Golang, Python, Java, C#, C++, JavaScript (TypeScript).",
+                    "Frameworks: Gin Gonic, Flask, Spring Boot, Fast API, React.",
+                    "Databases: SQL BigQuery, Redis, MySQL, SQLite, PostgreSQL, NoSQL MongoDB.",
+                    "Cloud: Google Cloud, AWS.",
+                    "Tools: Git, Datadog, New Relic, Jenkins, Postman.",
+                    "OS: GNU/Linux, Windows, Mac OS."
+                ]
+            },
+            {
+                "title": "Languages",
+                "items": ["English IELTS 7.5", "French DELF B2", "Spanish Native"]
+            },
+            {
+                "title": "Education",
+                "items": ["Systems and Computer Engineering, 2021 | Universidad Nacional de Colombia"]
+            },
+            {
+                "title": "Courses",
+                "items": [
+                    "Software Architecture & Design of Modern Large Scale Systems, 2023 | Udemy",
+                    "Data Science and Machine Learning: Making data driven solutions, 2022 | Massachusetts Institute of Technology",
+                    "Cybersecurity IT Fundamentals Specialist, 2020 | IBM"
+                ]
             }
         ],
         "skills_title": "Skills",

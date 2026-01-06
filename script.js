@@ -24,14 +24,17 @@ function render() {
             <h3>${job.title}</h3>
             <p>${job.subtitle}</p>
             <p>${job.description}</p>
-            <ul>${job.desc.map(d => `<li>${d}</li>`).join('')}</ul>
+            <ul>${job.bullet_points.map(d => `<li>${d}</li>`).join('')}</ul>
             <p><strong>${job.tech_stack_title}:</strong> ${job.tech_stack.join(', ')}.</p>
         </div>
     `).join('');
 
-    // Render Skills
-    const skillsList = document.getElementById('skills-list');
-    skillsList.innerHTML = lang.skills.map(s => `<li>${s}</li>`).join('');
+    // Render Aside
+    const aside = document.getElementById('aside');
+    aside.innerHTML = lang.aside_elements.map(element => `
+        <h2>${element.title}</h2>
+        <ul>${element.items.map(item => `<li>${item}</li>`).join('')}</ul>
+    `).join('');
 }
 
 // Language Toggles
