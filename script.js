@@ -1,5 +1,8 @@
 let resumeData = {};
-let currentLang = 'en';
+const EN = 'en';
+const FR = 'fr';
+const ES = 'es';
+let currentLang = EN;
 
 async function loadResume() {
     const response = await fetch('./data.json');
@@ -10,7 +13,6 @@ async function loadResume() {
 function render() {
     const lang = resumeData[currentLang];
     
-    document.getElementById('name').innerText = lang.name;
     document.getElementById('subtitle').innerText = lang.subtitle;
     document.getElementById('exp-title').innerText = lang.experience_title;
     document.getElementById('skills-title').innerText = lang.skills_title;
@@ -30,9 +32,19 @@ function render() {
     skillsList.innerHTML = lang.skills.map(s => `<li>${s}</li>`).join('');
 }
 
-// Language Toggle
-document.getElementById('lang-toggle').onclick = () => {
-    currentLang = currentLang === 'en' ? 'es' : 'en';
+// Language Toggles
+document.getElementById('lang-toggle-en').onclick = () => {
+    currentLang = EN;
+    render();
+};
+
+document.getElementById('lang-toggle-fr').onclick = () => {
+    currentLang = FR;
+    render();
+};
+
+document.getElementById('lang-toggle-es').onclick = () => {
+    currentLang = ES;
     render();
 };
 
@@ -40,7 +52,13 @@ document.getElementById('lang-toggle').onclick = () => {
 const themeBtn = document.getElementById('theme-toggle');
 themeBtn.onclick = () => {
     const current = document.documentElement.getAttribute('data-theme');
-    document.documentElement.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
+    if (current === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'light');
+        themeBtn.innerText = '🌙';
+    } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        themeBtn.innerText = '☀️';
+    }
 };
 
 loadResume();

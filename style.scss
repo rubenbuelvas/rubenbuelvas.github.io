@@ -19,6 +19,14 @@ $themes: (
     )
 );
 
+a:link {
+  color: #3498db;
+}
+
+a:visited {
+  color: #3498db;
+}
+
 :root {
     @each $name, $value in map.get($themes, dark) {
         --#{$name}: #{$value};

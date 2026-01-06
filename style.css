@@ -1,3 +1,11 @@
+a:link {
+  color: #3498db;
+}
+
+a:visited {
+  color: #3498db;
+}
+
 :root {
   --bg: #121212;
   --card: #1e1e1e;
