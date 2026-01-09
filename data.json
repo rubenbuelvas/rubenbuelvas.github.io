@@ -81,6 +81,8 @@
                     "Jupyter", 
                     "Pandas", 
                     "Scrapy", 
+                    "BeautifulSoup",
+                    "Selenium",
                     "HTML", 
                     "CSS", 
                     "SASS", 
@@ -130,34 +132,145 @@
                     "Cybersecurity IT Fundamentals Specialist, 2020 | IBM"
                 ]
             }
-        ],
-        "skills_title": "Skills",
-        "skills": ["HTML / SASS", "JavaScript", "Python"]
+        ]
     },
     "fr": {
-        "subtitle": "Développeur de logiciel",
-        "experience_title": "Expérience",
+        "subtitle": "Ingénieur logiciel",
+        "experience_title": "Expérience Professionnelle",
         "jobs": [
             {
-                "title": "Développeur Senior @ Tech Corp",
-                "subtitle": "2022 - 2026",
-                "desc": ["Lideré un equipo de 5 desarrolladores.", "Construí soluciones en la nube."]
+                "title": "Mercado Libre",
+                "subtitle": "Ssr Software Engineer. Janvier 2023 - Aujourd'hui \n Software Development Analyst. Octobre 2021 - Janvier 2023 \n Bogota DC, Colombie",
+                "description": "Équipe Moteur de Recherche. Responsable de la conception, du développement et de la maintenance de fonctionnalités API et de pipelines de données.",
+                "bullet_points": [
+                    "Intégrer des fonctionnalités en microservices en utilisant l'architecture hexagonale.",
+                    "Concevoir et développer des solutions logicielles dans des environnements techniquement complexes, en trouvant le juste équilibre entre la disponibilité des données en temps réel et le temps de réponse de nos applications.",
+                    "Concevoir et développer des pipelines de données de l'obtention de données jusqu'à l'implémentation de cachés sur nos applications.",
+                    "Surveillance des déploiements d'applications à fort trafic, haute criticité (environ 15 millions de requêtes par minute).",
+                    "Effectuer des tests unitaires et d'intégration, aussi en coordination avec d'autres équipes, pour assurer la qualité du code.",
+                    "Participer à toutes les phases du cycle de vie du développement (POC, conception, développement, testing, revue, déploiement, surveillance).",
+                    "Écrire documentation de fonctionnalités et changements sur les réponses de nos endpoints pour les autres développeurs et aussi pour les autres équipes.",
+                    "Faire partie de On-Call Rotation.",
+                    "Effectuer des revues de code sur GitHub pour assurer la qualité, la lisibilité, la maintenabilité et la couverture des tests des PRs d’autres développeurs.",
+                    "Participer à l'intégration et au déploiement de modèles de Machine Learning.",
+                    "Réduire environ 50% le temps de résolution des bugs grâce au développement de projets d'observabilité sur notre API principale.",
+                    "Améliorer environ 20% des performances des pipelines de données grâce à une réarchitecture de plusieurs applications tout en renforçant la maintenabilité du code.",
+                    "Concevoir le modèle de données pour intégrer les délais de livraison internationaux dans notre moteur de recherche."
+                ],
+                "tech_stack_title": "Environnement Technique",
+                "tech_stack": [
+                    "Golang", 
+                    "Gin Gonic",
+                    "Python", 
+                    "Poetry", 
+                    "Jupyter", 
+                    "SciKitLearn", 
+                    "Pandas", 
+                    "Fast API", 
+                    "Java", 
+                    "Spring Boot", 
+                    "Maven", 
+                    "HTML", 
+                    "CSS", 
+                    "JavaScript", 
+                    "TypeScript", 
+                    "React", 
+                    "REST", 
+                    "Git", 
+                    "GCP", 
+                    "GCS", 
+                    "BigQuery", 
+                    "Redis", 
+                    "BigQueue", 
+                    "AWS", 
+                    "S3", 
+                    "CI/CD", 
+                    "Jenkins", 
+                    "Docker", 
+                    "Jira", 
+                    "Confluence", 
+                    "GitHub", 
+                    "SCRUM", 
+                    "Datadog",
+                    "New Relic" ,  
+                    "Postman", 
+                    "GNU/Linux"
+                ]
+            },
+            {
+                "title": "Akuro SAS",
+                "subtitle": "Software Developer. Juillet 2021 - Septembre 2021 \n Software Developer. Juillet 2020 - Janvier 2021 \n Bogotá DC, Colombia",
+                "description": "Équipe de développement. Responsable de la conception, du développement et de la maintenance de fonctionnalités API. Conception de modèles de bases de données à partir des besoins du client.",
+                "bullet_points": [
+                    "Participer à toutes les phases du cycle de vie du développement (POC, conception, développement, testing, revue, déploiement, surveillance).",
+                    "Développer des outils pour faire backup de données.",
+                    "Concevoir des modèles de données avec les clients.",
+                    "Développer des scripts de scraping web pour l'automatisation de procès.",
+                    "Intégrer des méthodes de paiement sur notre plateforme.",
+                    "Effectuer des tests unitaires et d'intégration."
+                ],
+                "tech_stack_title": "Environnement Technique",
+                "tech_stack": [
+                    "Python", 
+                    "Flask", 
+                    "Jinja", 
+                    "Jupyter", 
+                    "Pandas", 
+                    "Scrapy", 
+                    "BeautifulSoup",
+                    "Selenium",
+                    "HTML", 
+                    "CSS", 
+                    "SASS", 
+                    "JavaScript", 
+                    "JQuery", 
+                    "REST", 
+                    "PostgreSQL", 
+                    "SQLite", 
+                    "MySQL", 
+                    "Git", 
+                    "Heroku", 
+                    "AWS", 
+                    "S3", 
+                    "Docker", 
+                    "GitLab", 
+                    "SCRUM", 
+                    "Postman", 
+                    "GNU/Linux"
+                ]
             }
         ],
-        "skills_title": "Habilidades",
-        "skills": ["HTML / SASS", "JavaScript", "Python"]
+        "aside_elements": [
+            {
+                "title": "Compétences techniques",
+                "items": [
+                    "Languages de programmation: Golang, Python, Java, C#, C++, JavaScript (TypeScript).",
+                    "Frameworks: Gin Gonic, Flask, Spring Boot, Fast API, React.",
+                    "Bases de données: SQL BigQuery, Redis, MySQL, SQLite, PostgreSQL, NoSQL MongoDB.",
+                    "Cloud: Google Cloud, AWS.",
+                    "Outils: Git, Datadog, New Relic, Jenkins, Postman.",
+                    "OS: GNU/Linux, Windows, Mac OS."
+                ]
+            },
+            {
+                "title": "Languages",
+                "items": ["Anglais IELTS 7.5", "Français DELF B2", "Espagnol Native"]
+            },
+            {
+                "title": "Education",
+                "items": ["Ingénierie des Systèmes et Informatique, 2021 | Universidad Nacional de Colombia"]
+            },
+            {
+                "title": "Cours",
+                "items": [
+                    "Software Architecture & Design of Modern Large Scale Systems, 2023 | Udemy",
+                    "Data Science and Machine Learning: Making data driven solutions, 2022 | Massachusetts Institute of Technology",
+                    "Cybersecurity IT Fundamentals Specialist, 2020 | IBM"
+                ]
+            }
+        ]
     },
     "es": {
-        "subtitle": "Ingeniero de Software",
-        "experience_title": "Experiencia",
-        "jobs": [
-            {
-                "title": "Desarrollador Senior @ Tech Corp",
-                "subtitle": "2022 - 2026",
-                "desc": ["Lideré un equipo de 5 desarrolladores.", "Construí soluciones en la nube."]
-            }
-        ],
-        "skills_title": "Habilidades",
-        "skills": ["HTML / SASS", "JavaScript", "Python"]
+        
     }
 }
