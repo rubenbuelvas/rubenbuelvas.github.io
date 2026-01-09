@@ -2,6 +2,7 @@ let resumeData = {};
 const EN = 'en';
 const FR = 'fr';
 const ES = 'es';
+const ACTIVE_LANGS = [EN, FR];
 let currentLang = EN;
 
 async function loadResume() {
@@ -15,7 +16,6 @@ function render() {
     
     document.getElementById('subtitle').innerText = lang.subtitle;
     document.getElementById('exp-title').innerText = lang.experience_title;
-    document.getElementById('skills-title').innerText = lang.skills_title;
 
     // Render Experience
     const expList = document.getElementById('experience-list');
@@ -39,29 +39,23 @@ function render() {
 
 // Set active language button
 function setActiveLang(activeId) {
-    const buttons = ['lang-toggle-en', 'lang-toggle-fr', 'lang-toggle-es'];
-    buttons.forEach(id => document.getElementById(id).classList.remove('active'));
+    let activeLangBtns = ACTIVE_LANGS.map(lang => `lang-toggle-${lang}`);
+    activeLangBtns.forEach(id => document.getElementById(id).classList.remove('active'));
     document.getElementById(activeId).classList.add('active');
 }
 
 // Language Toggles
-document.getElementById('lang-toggle-en').onclick = () => {
-    currentLang = EN;
-    setActiveLang('lang-toggle-en');
-    render();
-};
-
-document.getElementById('lang-toggle-fr').onclick = () => {
-    currentLang = FR;
-    setActiveLang('lang-toggle-fr');
-    render();
-};
-
-document.getElementById('lang-toggle-es').onclick = () => {
-    currentLang = ES;
-    setActiveLang('lang-toggle-es');
-    render();
-};
+ACTIVE_LANGS.forEach(lang => {
+    let btnId = `lang-toggle-${lang}`;
+    let btn = document.getElementById(btnId);
+    if (btn) {
+        btn.onclick = () => {
+            currentLang = lang;
+            setActiveLang(btnId);
+            render();
+        };
+    }
+});
 
 // Theme Toggle
 const themeBtn = document.getElementById('theme-toggle');
