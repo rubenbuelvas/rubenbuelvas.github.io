@@ -39,8 +39,8 @@ function render() {
 
 // Set active language button
 function setActiveLang(activeId) {
-    let activeLangBtns = ACTIVE_LANGS.map(lang => `lang-toggle-${lang}`);
-    activeLangBtns.forEach(id => document.getElementById(id).classList.remove('active'));
+    ACTIVE_LANGS.map(lang => `lang-toggle-${lang}`)
+        .forEach(id => document.getElementById(id).classList.remove('active'));
     document.getElementById(activeId).classList.add('active');
 }
 
