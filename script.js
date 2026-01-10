@@ -14,6 +14,8 @@ async function loadResume() {
 function render() {
     const lang = resumeData[currentLang];
     
+
+    document.getElementById('download-resume').innerText = lang.download_resume;
     document.getElementById('subtitle').innerText = lang.subtitle;
     document.getElementById('exp-title').innerText = lang.experience_title;
 
@@ -68,6 +70,15 @@ themeBtn.onclick = () => {
         document.documentElement.setAttribute('data-theme', 'dark');
         themeBtn.innerText = '☀️';
     }
+};
+
+// Download Resume
+const downloadBtn = document.getElementById('download-resume');
+downloadBtn.onclick = () => {
+    let filePath = currentLang === EN ?
+        'assets/Resume Rubén Buelvas EN.pdf' :
+        'assets/CV Rubén Buelvas FR.pdf';
+    window.open(filePath, '_blank');
 };
 
 loadResume();

@@ -1,5 +1,6 @@
 {
     "en": {
+        "download_resume": "Download Resume",
         "subtitle": "Software Engineer",
         "experience_title": "Professional Experience",
         "jobs": [
@@ -135,6 +136,7 @@
         ]
     },
     "fr": {
+        "download_resume": "Télécharger le CV",
         "subtitle": "Ingénieur logiciel",
         "experience_title": "Expérience Professionnelle",
         "jobs": [
