@@ -2,7 +2,7 @@ let resumeData = {};
 const EN = 'en';
 const FR = 'fr';
 const ES = 'es';
-const ACTIVE_LANGS = [EN, FR];
+const ACTIVE_LANGS = [EN, FR, ES];
 let currentLang = EN;
 
 async function loadResume() {
@@ -75,9 +75,9 @@ themeBtn.onclick = () => {
 // Download Resume
 const downloadBtn = document.getElementById('download-resume');
 downloadBtn.onclick = () => {
-    let filePath = currentLang === EN ?
-        'assets/Resume Rubén Buelvas EN.pdf' :
-        'assets/CV Rubén Buelvas FR.pdf';
+    let filePath = currentLang === FR ?
+        'assets/CV Rubén Buelvas FR.pdf' :
+        'assets/Resume Rubén Buelvas EN.pdf';
     window.open(filePath, '_blank');
 };
 

@@ -273,6 +273,140 @@
         ]
     },
     "es": {
-        
+        "download_resume": "Descargar CV",
+        "subtitle": "Ingeniero de Software",
+        "experience_title": "Experiencia profesional",
+        "jobs": [
+            {
+                "title": "Mercado Libre",
+                "subtitle": "Ssr Software Engineer. Enero 2023 - Presente \n Software Development Analyst. Octubre 2021 - Enero 2023 \n Bogotá DC, Colombia",
+                "description": "Search Engine Team: Responsable del diseño, desarrollo y mantenimiento de API features y pipelines de datos.",
+                "bullet_points": [
+                    "Integración funcionalidades de microservicios utilizando Arquitectura Hexagonal.",
+                    "Diseño y desarrollo soluciones de software en entornos técnicos complejos, equilibrando la disponibilidad de datos en tiempo real con los tiempos de respuesta de la aplicación.",
+                    "Concepción de pipelines de datos desde la ingesta de datos hasta la implementación de cachés a nivel de aplicación.",
+                    "Monitoreo de despliegues para aplicaciones de alto tráfico y alta criticidad (gestionando aproximadamente 15 millones de solicitudes por minuto).",
+                    "Realización pruebas unitarias y de integración, coordinándome entre equipos para garantizar la calidad del código.",
+                    "Participación en todo el ciclo de vida del desarrollo de software (POC, diseño, desarrollo, pruebas, revisión, despliegue y monitoreo).",
+                    "Redacción documentación técnica sobre funcionalidades y cambios en las respuestas de endpoints para desarrolladores internos y equipos multifuncionales.",
+                    "Formé parte de la rotación de guardias (On-Call).",
+                    "Realización de revisiones de código en GitHub para asegurar calidad, legibilidad, mantenibilidad y cobertura de pruebas.",
+                    "Apoyo la integración y el despliegue de modelos de Machine Learning.",
+                    "Logro clave: Reduje el tiempo de resolución de bugs en aproximadamente un 50% mediante el desarrollo de proyectos de observabilidad para la API principal.",
+                    "Logro clave: Mejoré el rendimiento de los pipelines de datos en un 20% mediante la re-arquitectura de múltiples aplicaciones, mejorando al mismo tiempo la mantenibilidad del código.",
+                    "Logro clave: Diseñé el modelo de datos para integrar tiempos de envío internacionales en el motor de búsqueda."
+                ],
+                "tech_stack_title": "Stack tecnológico",
+                "tech_stack": [
+                    "Golang", 
+                    "Gin Gonic",
+                    "Python", 
+                    "Poetry", 
+                    "Jupyter", 
+                    "SciKitLearn", 
+                    "Pandas", 
+                    "Fast API", 
+                    "Java", 
+                    "Spring Boot", 
+                    "Maven", 
+                    "HTML", 
+                    "CSS", 
+                    "JavaScript", 
+                    "TypeScript", 
+                    "React", 
+                    "REST", 
+                    "Git", 
+                    "GCP", 
+                    "GCS", 
+                    "BigQuery", 
+                    "Redis", 
+                    "BigQueue", 
+                    "AWS", 
+                    "S3", 
+                    "CI/CD", 
+                    "Jenkins", 
+                    "Docker", 
+                    "Jira", 
+                    "Confluence", 
+                    "GitHub", 
+                    "SCRUM", 
+                    "Datadog",
+                    "New Relic" ,  
+                    "Postman", 
+                    "GNU/Linux"
+                ]
+            },
+            {
+                "title": "Akuro SAS",
+                "subtitle": "Software Developer. July 2021 - September 2021 \n Software Developer. July 2020 - January 2021 \n Bogotá DC, Colombia",
+                "description": "Development Team: Responsible for API design and maintenance. Designed database models based on client requirements.",
+                "bullet_points": [
+                    "Participación en todo el ciclo de vida del desarrollo de software (POC, diseño, desarrollo, pruebas, revisión, despliegue y monitoreo).",
+                    "Desarrollo de scripts para backup de datos.",
+                    "Desarrollo de scriprts de web scraping para la automatización de procesos.",
+                    "Diseño de modelos de datos en colaboración con los clientes.",
+                    "Integración de pasarelas de pago en nuestra plataforma.",
+                    "Ejecución de pruebas unitarias e integración para asegurar despliegues robustos."
+                ],
+                "tech_stack_title": "Stack tecnológico",
+                "tech_stack": [
+                    "Python", 
+                    "Flask", 
+                    "Jinja", 
+                    "Jupyter", 
+                    "Pandas", 
+                    "Scrapy", 
+                    "BeautifulSoup",
+                    "Selenium",
+                    "HTML", 
+                    "CSS", 
+                    "SASS", 
+                    "JavaScript", 
+                    "JQuery", 
+                    "REST", 
+                    "PostgreSQL", 
+                    "SQLite", 
+                    "MySQL", 
+                    "Git", 
+                    "Heroku", 
+                    "AWS", 
+                    "S3", 
+                    "Docker", 
+                    "GitLab", 
+                    "SCRUM", 
+                    "Postman", 
+                    "GNU/Linux"
+                ]
+            }
+        ],
+        "aside_elements": [
+            {
+                "title": "Habilidades",
+                "items": [
+                    "Lenguajes de programación: Golang, Python, Java, C#, C++, JavaScript (TypeScript).",
+                    "Frameworks: Gin Gonic, Flask, Spring Boot, Fast API, React.",
+                    "Bases de datos: SQL BigQuery, Redis, MySQL, SQLite, PostgreSQL, NoSQL MongoDB.",
+                    "Cloud: Google Cloud, AWS.",
+                    "Herramientas: Git, Datadog, New Relic, Jenkins, Postman.",
+                    "OS: GNU/Linux, Windows, Mac OS."
+                ]
+            },
+            {
+                "title": "Idiomas",
+                "items": ["Inglés IELTS 7.5", "Francés DELF B2", "Español Nativo"]
+            },
+            {
+                "title": "Educación",
+                "items": ["Ingeniería de Sistemas y Computación, 2021 | Universidad Nacional de Colombia"]
+            },
+            {
+                "title": "Cursos",
+                "items": [
+                    "Software Architecture & Design of Modern Large Scale Systems, 2023 | Udemy",
+                    "Data Science and Machine Learning: Making data driven solutions, 2022 | Massachusetts Institute of Technology",
+                    "Cybersecurity IT Fundamentals Specialist, 2020 | IBM"
+                ]
+            }
+        ]
     }
 }
